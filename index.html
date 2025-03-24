@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>泡泡紙搓搓樂遊戲</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>泡泡紙搓搓樂</h1>
+            <div class="stats">
+                <div class="count">已搓泡泡：<span id="pop-count">0</span></div>
+                <div class="remaining">剩餘泡泡：<span id="remaining-count">100</span></div>
+            </div>
+        </header>
+
+        <div class="instructions">
+            <p>點擊泡泡或用滑鼠拖曳來搓泡泡紙，享受紓壓的快感！</p>
+        </div>
+
+        <div class="controls">
+            <div class="game-controls">
+                <button id="reset-btn">重新開始</button>
+            </div>
+            <div class="settings-controls">
+                <label class="control-item" for="sound-toggle">
+                    <input type="checkbox" id="sound-toggle">
+                    <span>音效</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="bubble-wrap-container">
+            <div id="bubble-wrap"></div>
+        </div>
+
+        <div class="completion" id="completion-message">
+            <h2>恭喜！你把所有的泡泡都搓完了！</h2>
+            <p>總共搓了 <span id="total-pops"></span> 個泡泡</p>
+            <button id="play-again-btn">再玩一次</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>泡泡紙搓搓樂 - 紓壓小遊戲 | 享受搓泡泡帶來的滿足感</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
